@@ -1,3 +1,6 @@
 # ShoppingTime
-This website tracks the prices of products and show the ones whose price has dropped.
-I have used Beautiful Soup and requests library for web scrapping.
+This website tracks the prices of products and shows the ones whose price has been dropped.
+Tech Stack:
+Django
+Beautiful Soup and requests :for web scraping
+database: SQLite
