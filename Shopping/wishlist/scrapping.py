@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import lxml
-source='https://www.amazon.in/gp/product/B08LSXRSJS/ref=ox_sc_act_title_1?smid=A2MTKUD8205HGB&psc=1'
+#source='https://www.amazon.in/gp/product/B08LSXRSJS/ref=ox_sc_act_title_1?smid=A2MTKUD8205HGB&psc=1'
 def get_data(source):
   print('entered')
 
@@ -33,4 +33,4 @@ def get_data(source):
         print('Scrapping failed')
         print(e)
 
-get_data(source)    
+#get_data(source)    
