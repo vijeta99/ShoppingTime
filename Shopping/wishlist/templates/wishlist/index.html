@@ -1,0 +1,25 @@
+<h1>Your Wishlist</h1>
+<form method="POST" action="/">
+ {{form}}
+ {% csrf_token %}
+ <input type="submit" name="Add item">
+</form>
+{%  for item in items %}
+<div>
+   <a href="{% url 'update_item' item.id %}">Update </a>
+   <a href="{% url 'delete_item' item.id %}">Delete </a>
+   <p>{{item}}</p>
+</div>
+{% endfor %} 
+<div>
+<h2>Discounted Items</h2>
+{% for item in items %}
+<div>
+{% if item.status == True %}
+<a href="{{item.link}}">{{item}}</a>
+<h3>Discount: "{{item.price_difference}}"</h3>
+<br>
+{% endif %}
+</div>
+{% endfor %}
+</div>
